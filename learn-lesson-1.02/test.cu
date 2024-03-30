@@ -8,7 +8,7 @@ __global__ void hello_from_gpu()
 
 int main(void)
 {
-    hello_from_gpu<<<4, 2>>>();
+    hello_from_gpu<<<3, 3>>>();
     cudaDeviceSynchronize();
 
     return 0;
