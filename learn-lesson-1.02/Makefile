@@ -5,4 +5,4 @@ test: test.cu
 
 clean:
 	@rm -rf test
-	@echo "Clean success"
+	@echo "Clean success!"
