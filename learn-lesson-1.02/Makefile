@@ -4,5 +4,5 @@ test: test.cu
 .PHONY: clean
 
 clean:
-	@rm -rf test
+	@find . -maxdepth 1 -type f ! -name "*.*" ! -name "Makefile" -exec rm -f {} +
 	@echo "Clean success!"
