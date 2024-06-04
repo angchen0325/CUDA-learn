@@ -12,7 +12,7 @@ __global__ void hello_from_gpu()
 
 int main(void)
 {
-    hello_from_gpu<<<3, 1>>>();
+    hello_from_gpu<<<3, 6>>>();
     cudaDeviceSynchronize();
 
     return 0;
